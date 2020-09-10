@@ -5,6 +5,7 @@ gemspec
 # Not sure why jruby on Travis fails saying rake is not part of the bundle,
 # even thought it's in the development dependencies. Trying it here.
 gem 'rake', '~> 13.0'
+gem 'json', '~> 2.3', '>= 2.3.1'
 
 group :release do
   gem 'bump', git: 'https://github.com/bethesque/bump.git'

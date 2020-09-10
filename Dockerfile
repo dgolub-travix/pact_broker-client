@@ -6,10 +6,10 @@ RUN gem update --system
 
 RUN mkdir -p home
 WORKDIR home
-ADD release-image /
-ENV BUNDLE_GEMFILE=/release/Gemfile
+ADD / /
+ENV BUNDLE_GEMFILE=/Gemfile
 RUN bundle install
-RUN git config --global user.email "beth@bethesque.com"
-RUN git config --global user.name "Beth Skurrie via Github Actions"
+RUN git config --global user.email "dgolub@travix.com"
+RUN git config --global user.name "dgolub-travix"
 
 ENTRYPOINT [/entrypoint.sh]
