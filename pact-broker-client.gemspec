@@ -28,7 +28,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'rake', '~> 13.0' #For FileList
 
   gem.add_development_dependency 'fakefs', '~> 0.4'
-  gem.add_development_dependency 'webmock', '~> 3.0'
+  gem.add_development_dependency 'webmock', '~> 3.8'
   gem.add_development_dependency 'conventional-changelog', '~>1.3'
-  gem.add_development_dependency 'pact', '~> 1.16'
+  gem.add_development_dependency 'pact', '~> 1.52'
 end
